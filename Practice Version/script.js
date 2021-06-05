@@ -90,7 +90,7 @@ holdBtn.addEventListener("click", function () {
 		document.getElementById(`score--${activePlayer}`).textContent = playerScore[activePlayer];
 		document.getElementById(`current--${activePlayer}`).textContent = 0;	
 
-		if(playerScore[activePlayer] >= 10) {
+		if(playerScore[activePlayer] >= 100) {
 			shouldPlaying = false;
 			document.querySelector(`.player--${activePlayer}`).classList.add("player--winner");
 			holdBtn.classList.add("hidden");
